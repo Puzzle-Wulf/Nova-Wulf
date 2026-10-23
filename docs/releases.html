@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="de">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NovaWulf – Release-Ankündigungen</title>
+<body>
+<main style="max-width:52rem;margin:3rem auto;padding:0 1rem;font:1.1rem/1.6 system-ui">
+<p><a href="index.html">Zur NovaWulf-Dokumentation</a></p>
+<h1>Release-Ankündigungen</h1>
+<p><strong>Stand 24.10.2026: Umsetzung zur Prüfung vorhanden, noch nicht im Live-Bot aktiviert.</strong></p>
+<p>NovaWulf soll freigegebene, öffentlich veröffentlichte GitHub-Releases automatisch
+in einen festgelegten Discord-Kanal wie <code>#announcements</code> senden.
+UpdateWulf ist als erstes Projekt vorgesehen. Solange dessen öffentliche Veröffentlichung
+und Ankündigung nicht ausdrücklich freigegeben sind, bleibt es gesperrt.</p>
+<h2>Was angekündigt werden darf</h2>
+<p>Administratoren hinterlegen eine Liste erlaubter öffentlicher Projekte sowie eindeutige
+Server- und Kanal-IDs. Jede Release-Ankündigung braucht eine dokumentierte Freigabe für
+das konkrete Release und dessen Inhalt. Ein Git-Tag, privater Entwicklungsstand oder
+Release-Entwurf genügt nicht. Vorabversionen brauchen eine zusätzliche Freigabe.</p>
+<p>Die Nachricht enthält Titel, einen gekürzten Auszug der Release-Notizen, Projekt,
+Version, Veröffentlichungsstatus und den Link zum GitHub-Release. Sie erwähnt keine Rollen
+und löst keine <code>@everyone</code>-Benachrichtigung aus. Eine „Coming soon“-Ankündigung
+ist nicht automatisch erlaubt und benötigt eine separate Freigabe des genauen Texts und Ziels.</p>
+<h2>Einrichtung und Test</h2>
+<ol>
+<li>Öffentliches Projekt, Release und gewünschte Ankündigung prüfen und freigeben.</li>
+<li>Server und Zielkanal über deren IDs festlegen.</li>
+<li>Dem Bot „Kanal ansehen“, „Nachrichten senden“ und „Links einbetten“ erlauben.</li>
+<li>Vorschau und Testmodus prüfen. Dieser Modus sendet keine Discord-Nachricht.</li>
+<li>Die Einrichtung in einem ausdrücklich gewählten Testkanal abnehmen und erst danach aktivieren.</li>
+</ol>
+<h2>Doppelte Nachrichten und Fehler</h2>
+<p>Ein dauerhafter Versandnachweis verhindert erneuten Versand desselben Releases nach
+Neustarts. Vorübergehende Fehler vor dem Versand werden begrenzt wiederholt. Ist unklar,
+ob Discord die Nachricht bereits angenommen hat, stoppt NovaWulf den automatischen
+Neuversand. Ein Administrator prüft dann zuerst den Zielkanal. Dadurch kann eine Nachricht
+bis zur Klärung fehlen; ein unsicherer Versand wird nicht blind wiederholt.</p>
+<p>Die Umsetzung benötigt keinen zusätzlichen kostenpflichtigen Dienst. Es gibt dafür
+derzeit keinen neuen Slash-Befehl und keine automatische Veröffentlichung von Releases.</p>
+</main>
+</body>
+</html>

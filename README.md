@@ -19,3 +19,8 @@ Die statische, serverunabhängige Website liegt unter [docs/index.html](docs/ind
 ## Status
 
 Dokumentation für NovaWulf 2.1.0; Quellbasis `Puzzle-Wulf/.Nova-Wulf@f5b068cd7422` (09.09.2026). Diese Angabe bezeichnet eine Quellcodeprüfung; einzelne Funktionalitäten hängen von der Konfiguration und den Discord-Berechtigungen ab.
+## Release-Ankündigungen – noch nicht aktiviert
+
+Die [Anleitung zu Release-Ankündigungen](docs/releases.html) beschreibt den vorbereiteten
+Publisher, Freigaben, Testmodus und Fehlerbehandlung. UpdateWulf bleibt bis zur verifizierten
+öffentlichen Veröffentlichung und ausdrücklichen Ankündigungsfreigabe gesperrt.
